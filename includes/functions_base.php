@@ -111,7 +111,7 @@ function blast_message($smsc,$from,$tblname,$promomsg,$server,$dbname){
   $dbc = mysqli_connect($server, "root", "emlinux88",$dbname)
           or
           die("error connecting to database");
-  $query = "select distinct msisdn from " .$tblname.;
+  $query = "select distinct msisdn from " .$tblname;
   $result = mysqli_query($dbc, $query) or die("big error");
   mysqli_close($dbc);
   $sip = "208.109.95.86";
