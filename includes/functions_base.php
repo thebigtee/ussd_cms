@@ -147,8 +147,9 @@ function blast_message($smsc,$from,$tblname,$promomsg,$server,$dbname,$pool_id){
        $num = $row['msisdn'];
        //$rec_id = $row['id'];
        $i++;
-   echo " Total message sent by blaster is $i \n ";
-   echo "Message sent to $num\n";
+  //  echo " Total message sent by blaster is $i \n ";
+  //  echo "Message sent to $num\n";
+  
    // Log the message to the sms_log table
    $promomsg = htmlentities(addslashes($promomsg));
    $date = date('Y-m-d H:i:s', time());
@@ -168,7 +169,7 @@ function blast_message($smsc,$from,$tblname,$promomsg,$server,$dbname,$pool_id){
   // echo file_get_contents("http://$sip:13013/cgi-bin/sendsms?username=tester&password=foobar&to=2348184897653&text=" .urlencode($promomsg)."&from=$from&smsc=$smsc");
   // echo file_get_contents("http://$sip:13013/cgi-bin/sendsms?username=tester&password=foobar&to=2349084463381&text=" .urlencode($promomsg)."&from=$from&smsc=$smsc");
   mysqli_close($dbc);
-  echo " Done sending\n";
+  // echo " Done sending\n";
 
   return true;
 }

@@ -9,14 +9,14 @@ confirm_logged_in();
 $PoolManager = new PoolDB;
 // Get the Pool by the ID
 $get_pool_id = (int)$_GET['p'];
-var_dump($get_pool_id);
+// var_dump($get_pool_id);
 $Pool = $PoolManager->get_pool($get_pool_id);
 $WinningBets = $PoolManager->get_winning_bets($get_pool_id);
 $data = array("type" => "winner");
 $WinMessage = $PoolManager->get_message($data);
-var_dump($WinningBets);
-var_dump($data);
-var_dump($WinMessage);
+// var_dump($WinningBets);
+// var_dump($data);
+// var_dump($WinMessage);
 
 
 if((count($WinningBets)>0) && ($WinningBets != false)){ //If we have winners
