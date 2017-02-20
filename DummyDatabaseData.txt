@@ -1,0 +1,14 @@
++-----------------+---------------------+------+-----+---------+----------------+
+| Field           | Type                | Null | Key | Default | Extra          |
++-----------------+---------------------+------+-----+---------+----------------+
+| id              | bigint(20) unsigned | NO   | PRI | NULL    | auto_increment |
+| name            | varchar(100)        | NO   |     | NULL    |                |
+| type            | varchar(100)        | NO   |     | NULL    |                |
+| payout_amount   | varchar(100)        | NO   |     | NULL    |                |
+| num_of_fixtures | int(11)             | NO   |     | NULL    |                |
+| winning_tiers   | int(11)             | NO   |     | NULL    |                |
+| start_date      | datetime            | YES  |     | NULL    |                |
+| end_date        | datetime            | YES  |     | NULL    |                |
+| result          | varchar(200)        | YES  |     | NULL    |                |
+| status          | varchar(20)         | YES  |     | NULL    |                |
++-----------------+---------------------+------+-----+---------+----------------+

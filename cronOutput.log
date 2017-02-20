@@ -1,0 +1,312 @@
+
+Notice: Undefined index: REQUEST_URI in /var/www/html/ussd/includes/functions_base.php on line 80
+
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+
+Notice: Undefined index: REQUEST_URI in /var/www/html/ussd/includes/functions_base.php on line 80
+
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+
+Notice: Undefined index: REQUEST_URI in /var/www/html/ussd/includes/functions_base.php on line 80
+
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+
+Notice: Undefined index: REQUEST_URI in /var/www/html/ussd/includes/functions_base.php on line 80
+
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+
+Notice: Undefined index: REQUEST_URI in /var/www/html/ussd/includes/functions_base.php on line 80
+
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+
+Notice: Undefined index: REQUEST_URI in /var/www/html/ussd/includes/functions_base.php on line 80
+
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+
+Notice: Undefined index: REQUEST_URI in /var/www/html/ussd/includes/functions_base.php on line 80
+<br> The current date is: 2017-02-16 03:22:01 pm
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+
+Notice: Undefined index: REQUEST_URI in /var/www/html/ussd/includes/functions_base.php on line 80
+<br> The current date is: 2017-02-16 03:23:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+
+Notice: Undefined index: REQUEST_URI in /var/www/html/ussd/includes/functions_base.php on line 80
+<br> The current date is: 2017-02-16 03:24:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+
+Notice: Undefined index: REQUEST_URI in /var/www/html/ussd/includes/functions_base.php on line 80
+<br> The current date is: 2017-02-16 15:25:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+
+Notice: Undefined index: REQUEST_URI in /var/www/html/ussd/includes/functions_base.php on line 80
+<br> The current date is: 2017-02-16 15:26:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:27:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:28:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:29:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:30:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:31:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:32:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:33:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:34:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:35:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:36:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:37:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:38:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:39:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:40:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:41:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:42:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:43:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:44:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:45:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:46:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:47:01
+Notice: Trying to get property of non-object in /var/www/html/ussd/libs/MysqliDb.php on line 288
+<br> The current data['status'] is: array(1) {
+  ["status"]=>
+  string(6) "active"
+}
+
+Notice: Trying to get property of non-object in /var/www/html/ussd/libs/MysqliDb.php on line 288
+
+Fatal error: Uncaught Error: Call to a member function prepare() on null in /var/www/html/ussd/libs/MysqliDb.php:1820
+Stack trace:
+#0 /var/www/html/ussd/libs/MysqliDb.php(1432): MysqliDb->_prepareQuery()
+#1 /var/www/html/ussd/libs/MysqliDb.php(605): MysqliDb->_buildQuery(NULL)
+#2 /var/www/html/ussd/libs/PoolDB.php(197): MysqliDb->get('Pools')
+#3 /var/www/html/ussd/cronjob.php(21): PoolDB->get_active_pools(Array)
+#4 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 1820
+<br> The current date is: 2017-02-16 15:48:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:49:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:50:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:51:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:52:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:53:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:54:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
+<br> The current date is: 2017-02-16 15:55:01
+Fatal error: Uncaught Error: Class 'mysqli' not found in /var/www/html/ussd/libs/MysqliDb.php:281
+Stack trace:
+#0 /var/www/html/ussd/libs/PoolDB.php(17): MysqliDb->connect()
+#1 /var/www/html/ussd/cronjob.php(17): PoolDB->__construct()
+#2 {main}
+  thrown in /var/www/html/ussd/libs/MysqliDb.php on line 281
