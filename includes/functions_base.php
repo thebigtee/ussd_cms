@@ -99,7 +99,65 @@ function set_active_page(){
 set_active_page();
 
 
+function blast_message($smsc,$from,$tblname,$promomsg,$server,$dbname){
 
+  $i=0;
+  $tblname =$tblname;//Table to pick the numbers from ie <Bets>
+  $from = $from; // 747 ie MyClub
+  $smsc = $smsc; // precin
+  $promomsg =$promomsg; // From PoolManager->get_message($data);
+  $server=$server; // 86 server ie 208.109.95.86
+  $dbname=$dbname; // ussd_services
+  $dbc = mysqli_connect($server, "root", "emlinux88",$dbname)
+          or
+          die("error connecting to database");
+  $query = "select distinct msisdn from " .$tblname.;
+  $result = mysqli_query($dbc, $query) or die("big error");
+  mysqli_close($dbc);
+  $sip = "208.109.95.86";
+  // $kannel_sender="http://208.109.95.86:13013/cgi-bin/sendsms?username=tester&password=foobar";
+  // if($smsc == 'precin4' || $from == '38547')
+	//    {$sip = "208.109.186.98";}
+
+  while ($row = mysqli_fetch_array($result)) {
+      $xml = new SimpleXMLElement(file_get_contents("http://$sip:13000/status.xml?password=password'"));
+      $sms_store = $xml->sms->storesize;
+      inner: $flag = 0;
+      while ($sms_store >= 2000000) {
+
+          $xml = new SimpleXMLElement(file_get_contents("http://$sip:13000/status.xml?password=password'"));
+          $sms_store = $xml->sms->storesize;
+          $sms_received = $xml->sms->received->total;
+          $sms_sent = $xml->sms->sent->total;
+          echo "sms sent = $sms_sent \n";
+          echo "sms in store = $sms_store \n";
+          echo "sms received = $sms_received \n";
+          echo "Going into sleep mode to protect Kannel \n";
+          sleep(60);
+          unset($xml);
+          $flag = 1;
+          break;
+        }
+      if ($flag == 1)
+       {goto inner;}
+
+       $num = $row['msisdn'];
+       //$rec_id = $row['id'];
+       $i++;
+   echo " Total message sent by blaster is $i \n ";
+   echo "Message sent to $num\n";
+   echo file_get_contents("http://$sip:13013/cgi-bin/sendsms?username=tester&password=foobar&to=".$num."&text=" .urlencode($promomsg)."&from=$from&smsc=$smsc");
+
+  unset($xml);
+   }
+  // unset($xml);
+  // echo file_get_contents("http://$sip:13013/cgi-bin/sendsms?username=tester&password=foobar&to=2349093077609&text=" .urlencode($promomsg)."&from=$from&smsc=$smsc");
+  // echo file_get_contents("http://$sip:13013/cgi-bin/sendsms?username=tester&password=foobar&to=2348184897653&text=" .urlencode($promomsg)."&from=$from&smsc=$smsc");
+  // echo file_get_contents("http://$sip:13013/cgi-bin/sendsms?username=tester&password=foobar&to=2349084463381&text=" .urlencode($promomsg)."&from=$from&smsc=$smsc");
+  echo " Done sending\n";
+
+  return true;
+}
 
 
 

@@ -427,7 +427,7 @@ public function get_all_messages(){
 }
 
 ##################################
-#Get All Messages
+#Update All Messages
 public function update_messages($data){
   $this->where('type', $data['type']);
   if ($this->update('Messages', $data)){
@@ -436,7 +436,17 @@ public function update_messages($data){
     return false;
   }
 }
-
+######################################
+#Get Message content when given type
+public function get_message($data){
+  $this->where("type", $data['type']);
+  $Message = $this->getOne("Messages");
+  if(count($Message) > 0){
+    return $Message['msg'];
+  }else{
+    return false;
+  }
+}
 
 }
 

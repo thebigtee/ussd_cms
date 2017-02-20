@@ -11,11 +11,13 @@ $PoolManager = new PoolDB;
 $get_pool_id = (int)$_GET['p'];
 $Pool = $PoolManager->get_pool($get_pool_id);
 $WinningBets = $PoolManager->get_winning_bets($get_pool_id);
+$data = array("type" => "winner");
+$WinMessage = $PoolManager->get_message($data);
 var_dump($WinningBets);
-echo "We are here so?";
+$sent = blast_message("precin","747","Bets",$WinMessage,"localhost","ussd_services");
 
 // All Messages sent successfully
-if(true){
+if($sent){
   // Send Feedback to User
   $title = "Success";
   $message = "The Pool has been successfully updated!";
