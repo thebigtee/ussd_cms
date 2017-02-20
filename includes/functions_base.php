@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set("Africa/Lagos");
 $apply_active = array(
   "Pools"=>"",
   "Bets"=>"",
@@ -99,21 +100,23 @@ function set_active_page(){
 set_active_page();
 
 
-function blast_message($smsc,$from,$tblname,$promomsg,$server,$dbname){
+function blast_message($smsc,$from,$tblname,$promomsg,$server,$dbname,$pool_id){
 
   $i=0;
   $tblname =$tblname;//Table to pick the numbers from ie <Bets>
   $from = $from; // 747 ie MyClub
   $smsc = $smsc; // precin
   $promomsg =$promomsg; // From PoolManager->get_message($data);
+  $pool_id = (int)$pool_id;
   $server=$server; // 86 server ie 208.109.95.86
   $dbname=$dbname; // ussd_services
   $dbc = mysqli_connect($server, "root", "emlinux88",$dbname)
           or
           die("error connecting to database");
-  $query = "select distinct msisdn from " .$tblname;
+  // $query = "select distinct msisdn from " .$tblname;
+  $query = "select distinct msisdn from Bets where winner=1"." and pool_id=".$pool_id;
   $result = mysqli_query($dbc, $query) or die("big error");
-  mysqli_close($dbc);
+
   $sip = "208.109.95.86";
   // $kannel_sender="http://208.109.95.86:13013/cgi-bin/sendsms?username=tester&password=foobar";
   // if($smsc == 'precin4' || $from == '38547')
@@ -146,6 +149,16 @@ function blast_message($smsc,$from,$tblname,$promomsg,$server,$dbname){
        $i++;
    echo " Total message sent by blaster is $i \n ";
    echo "Message sent to $num\n";
+   // Log the message to the sms_log table
+   $promomsg = htmlentities(addslashes($promomsg));
+   $date = date('Y-m-d H:i:s', time());
+   $logit = "insert into sms_log(pool_id,sms,msisdn,sent_time) values(";
+   $logit .= "'".$pool_id."',  ";
+   $logit .= "'".$promomsg."',  ";
+   $logit .= "'".$num."',  ";
+   $logit .= "'".$date."')";
+  //  echo $logit;
+   mysqli_query($dbc, $logit) or die("Could not log the sms...".mysqli_error($dbc));
    echo file_get_contents("http://$sip:13013/cgi-bin/sendsms?username=tester&password=foobar&to=".$num."&text=" .urlencode($promomsg)."&from=$from&smsc=$smsc");
 
   unset($xml);
@@ -154,6 +167,7 @@ function blast_message($smsc,$from,$tblname,$promomsg,$server,$dbname){
   // echo file_get_contents("http://$sip:13013/cgi-bin/sendsms?username=tester&password=foobar&to=2349093077609&text=" .urlencode($promomsg)."&from=$from&smsc=$smsc");
   // echo file_get_contents("http://$sip:13013/cgi-bin/sendsms?username=tester&password=foobar&to=2348184897653&text=" .urlencode($promomsg)."&from=$from&smsc=$smsc");
   // echo file_get_contents("http://$sip:13013/cgi-bin/sendsms?username=tester&password=foobar&to=2349084463381&text=" .urlencode($promomsg)."&from=$from&smsc=$smsc");
+  mysqli_close($dbc);
   echo " Done sending\n";
 
   return true;

@@ -7,6 +7,7 @@ $PoolManager = new PoolDB;
 $Pools = $PoolManager->get_all_pools();
 $output = "";
 $class = "";
+$msg_box = "";
 if(count($Pools) > 0 ){
   foreach($Pools as $Pool){
     # code...
@@ -29,8 +30,11 @@ if(count($Pools) > 0 ){
     // var_dump($winners);
     if($winners !== false){
       $totalWinners = count($winners);
+      $msg_box = "<a class=\"btn btn-xs btn-success\" href=\"/ussd/SuccessMessage.php?p=$Pool[id]\" title=\"\" data-original-title=\"Send Message To Winners\">
+      <span class=\"glyphicon glyphicon-envelope\" data-original-title=\"\" title=\"Send Message To Winners\"></span></a>";
     }else{
       $totalWinners = 0;
+      $msg_box = "";
     }
     // var_dump($totalWinners);
     $output .="<td>$outcome</td>";
@@ -40,8 +44,7 @@ if(count($Pools) > 0 ){
     $output .="<td>
     <form method=\"post\">
     <center>
-     <a class=\"btn btn-xs btn-success\" href=\"/ussd/SuccessMessage.php?p=$Pool[id]\" title=\"\" data-original-title=\"Send Message To Winners\">
-     <span class=\"glyphicon glyphicon-envelope\" data-original-title=\"\" title=\"Send Message To Winners\"></span></a>
+     ".$msg_box."
      <a class=\"btn btn-xs btn-primary\" href=\"/ussd/EditPools.php?p=$Pool[id]\" title=\"\" data-original-title=\"Edit\">
      <span class=\"glyphicon glyphicon-pencil\" data-original-title=\"\" title=\"Edit\"></span></a>
      <a class=\"btn btn-xs btn-danger confirmation\" href=\"/ussd/DelPools.php?p=$Pool[id]\" title=\"\" data-original-title=\"Delete\">
